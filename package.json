@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "locale-gen": "node localization/locale-gen.js",
-    "build": "npx babel src --out-dir lib --copy-files"
+    "build": "rm -rf lib && npx babel src --out-dir lib --copy-files"
   },
   "keywords": [],
   "author": "",
