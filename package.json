@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "locale-gen": "node localization/locale-gen.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-localization": "^1.0.15",
+    "react": "^16.8.1",
+    "prop-types": "^15.6.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "prop-types": "^15.6.2"
+  }
 }
