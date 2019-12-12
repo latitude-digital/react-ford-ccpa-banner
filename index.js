@@ -100,9 +100,9 @@ function CAPrivacyBanner (props) {
 
   return (
     <div style={{ ...defaultStyle.container, ...brandStyle.container }}>
-      {/*  <style dangerouslySetInnerHTML={{ __html: `*/}
-      {/*  @import url('https://ld-email-images.s3-us-west-2.amazonaws.com/test.css');*/}
-      {/* ` }} />*/}
+        <style dangerouslySetInnerHTML={{ __html: `
+            @import url('https://ld-email-images.s3-us-west-2.amazonaws.com/test.css');
+        ` }} />
       <h3 style={{ ...defaultStyle.header, ...brandStyle.header }}>{L('californiaPrivacyHeader', language)}</h3>
       <h4 style={{ ...defaultStyle.content, ...brandStyle.content }}>{L('californiaPrivacyContent', language)}
         <a href={`${deletePILink}`} style={{ ...defaultStyle.contentLink, ...brandStyle.contentLink }}>{L('here', language)}</a >.
