@@ -1,4 +1,5 @@
-# react-ford-ccpa-banner
+# California Privacy Banner
+![Example:](ca_privacy_banner.png)
 
 ##Install:
 
@@ -7,7 +8,7 @@
 $ yarn add https://github.com/latitude-digital/react-ford-ccpa-banner
 ```
 
-###For development:
+##Development:
 - make changes
 - run `npm run build`
 - then push em up
