@@ -47,5 +47,19 @@
     "English": "here",
     "French": "",
     "Spanish": "here"
+  },
+  "privacy": {
+    "Key": "privacy",
+    "Alternate Keys": "",
+    "English": "Privacy",
+    "French": "",
+    "Spanish": "Privacy"
+  },
+  "CAPrivacyRights": {
+    "Key": "CAPrivacyRights",
+    "Alternate Keys": "",
+    "English": "Your CA Privacy Rights",
+    "French": "",
+    "Spanish": "Your CA Privacy Rights"
   }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "locale-gen": "node localization/locale-gen.js",
+    "locale-gen": "node src/localization/locale-gen.js",
     "build": "rm -rf lib && npx babel src --out-dir lib --copy-files"
   },
   "keywords": [],

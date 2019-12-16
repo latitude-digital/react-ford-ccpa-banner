@@ -4,7 +4,7 @@ const filesToFormat = [
   {
     // Global
     data: require('./locale-unformatted.json'),
-    saveAs: './localization/locale-formatted.json',
+    saveAs: './src/localization/locale-formatted.json',
   },
 ];
 
