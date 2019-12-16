@@ -13,4 +13,21 @@
   --lincoln-white: #cacdcf;
   --lincoln-red: #f26147;
 }
+@media screen and (max-width: 375px) {
+  .ld_header {
+    font-size: 16px;
+  }
+  .ld_content {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 376px){
+  .ld_header {
+    font-size: 24px;
+  }
+  .ld_content {
+    font-size: 14px;
+  }
+}
 
