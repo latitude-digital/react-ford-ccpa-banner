@@ -13,12 +13,17 @@
   --lincoln-white: #cacdcf;
   --lincoln-red: #f26147;
 }
+
 @media screen and (max-width: 375px) {
   .ld_header {
     font-size: 16px;
   }
   .ld_content {
     font-size: 11px;
+  }
+  .ld_footer_img {
+    float: left;
+    margin-top: 10px;
   }
 }
 
@@ -28,6 +33,9 @@
   }
   .ld_content {
     font-size: 14px;
+  }
+  .ld_footer_img {
+    float: right;
   }
 }
 

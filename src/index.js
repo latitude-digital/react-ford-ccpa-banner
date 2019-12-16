@@ -154,7 +154,7 @@ function CAPrivacyBanner (props) {
           {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px'}}/> : null }
           <a href={`${privacyLink}`} style={{ ...brandStyle.privacyContainerLink }}>Privacy</a >{team === 'lincoln' ? <span style={{ ...brandStyle.linkDivider }}>|</span> : null}
           <a href={`${CAPrivacyLink}`} style={{ ...brandStyle.privacyContainerLink }}>Your CA Privacy Rights</a >
-          {team === 'ford' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} style={{float:'right', marginTop: '10px'}}/> : null }
+          {team === 'ford' ? <img className={'ld_footer_img'} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} /> : null }
         </div>
       : null}
     </div>
