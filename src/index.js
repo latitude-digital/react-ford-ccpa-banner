@@ -133,9 +133,6 @@ function CAPrivacyBanner (props) {
   return (
     <div>
       <div className={'ld_content'} style={{ ...defaultStyle.container, ...brandStyle.container }}>
-          <style dangerouslySetInnerHTML={{ __html: `
-              @import url('https://ld-email-images.s3-us-west-2.amazonaws.com/test.css');
-          ` }} />
         <h3 className={'ld_header'} style={{ ...defaultStyle.header, ...brandStyle.header }}>{L('californiaPrivacyHeader', language)}</h3>
         <h4 style={{ ...defaultStyle.content, ...brandStyle.content }}>{L('californiaPrivacyContent', language)}
           <a href={`${deletePILink}`} style={{ ...defaultStyle.contentLink, ...brandStyle.contentLink }}>{L('here', language)}</a >.
@@ -148,9 +145,6 @@ function CAPrivacyBanner (props) {
       </div>
       {showPrivacy ?
         <div className={'ld_content'} style={{ ...brandStyle.privacyContainer }}>
-          {/*  <style dangerouslySetInnerHTML={{ __html: `*/}
-          {/*  @import url('https://ld-email-images.s3-us-west-2.amazonaws.com/test.css');*/}
-          {/* ` }} />*/}
           {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px'}}/> : null }
           <a href={`${privacyLink}`} style={{ ...brandStyle.privacyContainerLink }}>Privacy</a >{team === 'lincoln' ? <span style={{ ...brandStyle.linkDivider }}>|</span> : null}
           <a href={`${CAPrivacyLink}`} style={{ ...brandStyle.privacyContainerLink }}>Your CA Privacy Rights</a >
