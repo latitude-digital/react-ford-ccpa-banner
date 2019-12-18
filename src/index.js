@@ -20,9 +20,9 @@ function CAPrivacyBanner (props) {
       <div className={`container-${team}`}>
         <h3 className={`header-${team}`}>{L('californiaPrivacyHeader', language)}</h3>
         <h4 className={`content-${team}`}>{L('californiaPrivacyContent', language)}
-          <a href={`${deletePILink}`} className={`contentLink-${team}`}>{L('here', language)}</a >.
+          <a href={`${deletePILink}`} className={`contentLink-${team}`} target='_blank'>{L('here', language)}</a >.
         </h4>
-        <a href={`${doNotSellPILink}`} >
+        <a href={`${doNotSellPILink}`} target='_blank' >
           <button className={`button-${team}`}>
             {L('californiaPrivacyButton', language)}
           </button>
@@ -31,8 +31,8 @@ function CAPrivacyBanner (props) {
       {showPrivacy ?
         <div className={`privacyContainer-${team}`}>
           {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px'}}/> : null }
-          <a href={`${privacyLink}`} className={`privacyContainerLink-${team}`}>{L('privacy', language)}</a >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
-          <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`}>{L('CAPrivacyRights', language)}</a >
+          <a href={`${privacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{L('privacy', language)}</a >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
+          <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{L('CAPrivacyRights', language)}</a >
           {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} /> : null }
         </div>
       : null}
