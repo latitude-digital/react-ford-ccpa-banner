@@ -65,97 +65,97 @@
   padding: 50px;
 }
 
-.container-ford {
-  @include default-container;
-  background-color: var(--ford-dark-blue);
-  font-family: FordAntenna-Regular, sans-serif;
-}
-.header-ford {
-  @include default-header;
-  color: var(--ford-white);
-}
-.content-ford {
-  @include default-content;
-  color: var(--ford-white);
-}
-.contentLink-ford {
-  @include default-content-link;
-  color: var(--ford-link-blue);
-}
-.button-ford {
-  @include default-button;
-  background-color: var(--ford-light-blue);
-  color: var(--ford-white);
-  border: var(--ford-light-blue);
-}
-.privacyContainer-ford {
-  background-color: var(--ford-white);
-  font-family: FordAntenna-Regular, sans-serif;
-  @include default-privacy-container;
-}
-.privacyContainerLink-ford {
-  color: var(--ford-dark-grey);
-  text-decoration: none;
-  padding-right: 30px;
-}
-@media screen and (max-width: 375px) {
-  .footer-img-ford {
-    float: left;
-    margin-top: 10px;
+@mixin footer-img-ford-media {
+  @media screen and (max-width: 375px) {
+      float: left;
+      margin-top: 10px;
+  }
+  @media only screen and (min-width: 376px){
+      float: right;
   }
 }
-
-@media only screen and (min-width: 376px){
-  .footer-img-ford {
-    float: right;
+  .container-ford {
+    @include default-container;
+    background-color: var(--ford-dark-blue);
+    font-family: FordAntenna-Regular, sans-serif;
   }
-}
+  .header-ford {
+    @include default-header;
+    color: var(--ford-white);
+  }
+  .content-ford {
+    @include default-content;
+    color: var(--ford-white);
+  }
+  .contentLink-ford {
+    @include default-content-link;
+    color: var(--ford-link-blue);
+  }
+  .button-ford {
+    @include default-button;
+    background-color: var(--ford-light-blue);
+    color: var(--ford-white);
+    border: var(--ford-light-blue);
+  }
+  .privacyContainer-ford {
+    background-color: var(--ford-white);
+    font-family: FordAntenna-Regular, sans-serif;
+    @include default-privacy-container;
+  }
+  .privacyContainerLink-ford {
+    color: var(--ford-dark-grey);
+    text-decoration: none;
+    padding-right: 30px;
+  }
+  .footer-img-ford {
+    @include footer-img-ford-media
+  }
+  .container-lincoln {
+    @include default-container;
+    background-color: var(--lincoln-dark-gray);
+    font-family: LincolnProximaNovaLight, sans-serif;
+  }
+  .header-lincoln {
+    @include default-header;
+    color: var(--lincoln-white);
+    text-transform: uppercase;
+  }
+  .content-lincoln {
+    color: var(--lincoln-white);
+  }
+  .contentLink-lincoln {
+    @include default-content-link;
+    color: var(--lincoln-white);
+    text-decoration-color: var(--lincoln-red);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: LincolnProximaNovaSemibold, sans-serif !important;
+  }
+  .button-lincoln {
+    @include default-button;
+    background-color: var(--lincoln-white);
+    color: var(--lincoln-dark-gray);
+    border-top: var(--lincoln-white);
+    border-bottom: 5px solid var(--lincoln-red);
+    border-left: var(--lincoln-white);
+    border-right: var(--lincoln-white);
+    font-family: LincolnProximaNovaSemibold, sans-serif !important;
+    text-transform: uppercase;
+  }
+  .privacyContainer-lincoln {
+    background-color: var(--lincoln-dark-gray);
+    font-family: LincolnProximaNovaLight, sans-serif;
+    @include default-privacy-container;
+  }
+  .privacyContainerLink-lincoln {
+    color: var(--lincoln-white);
+    text-transform: uppercase;
+    padding-right: 15px;
+    font-size: 12px;
+  }
+  .linkDivider-lincoln {
+    color: var(--lincoln-white);
+    padding-right: 15px;
+  }
 
-.container-lincoln {
-  @include default-container;
-  background-color: var(--lincoln-dark-gray);
-  font-family: LincolnProximaNovaLight, sans-serif;
-}
-.header-lincoln {
-  @include default-header;
-  color: var(--lincoln-white);
-  text-transform: uppercase;
-}
-.content-lincoln {
-  color: var(--lincoln-white);
-}
-.contentLink-lincoln {
-  @include default-content-link;
-  color: var(--lincoln-white);
-  text-decoration-color: var(--lincoln-red);
-  text-decoration: underline;
-  text-transform: uppercase;
-  font-family: LincolnProximaNovaSemibold, sans-serif !important;
-}
-.button-lincoln {
-  @include default-button;
-  background-color: var(--lincoln-white);
-  color: var(--lincoln-dark-gray);
-  border-top: var(--lincoln-white);
-  border-bottom: 5px solid var(--lincoln-red);
-  border-left: var(--lincoln-white);
-  border-right: var(--lincoln-white);
-  font-family: LincolnProximaNovaSemibold, sans-serif !important;
-  text-transform: uppercase;
-}
-.privacyContainer-lincoln {
-  background-color: var(--lincoln-dark-gray);
-  font-family: LincolnProximaNovaLight, sans-serif;
-  @include default-privacy-container;
-}
-.privacyContainerLink-lincoln {
-  color: var(--lincoln-white);
-  text-transform: uppercase;
-  padding-right: 15px;
-  font-size: 12px;
-}
-.linkDivider-lincoln {
-  color: var(--lincoln-white);
-  padding-right: 15px;
-}
 

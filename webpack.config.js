@@ -17,24 +17,6 @@ module.exports = {
     performance: {
         hints: false,
     },
-    // optimization: {
-    //     namedChunks: true,
-    //     namedModules: true,
-    //     moduleIds: 'hashed',
-    //     runtimeChunk: {
-    //         name: entrypoint => `runtime~${entrypoint.name}`,
-    //     },
-    //     splitChunks: {
-    //         cacheGroups: {
-    //             vendor: {
-    //                 test: /node_modules/,
-    //                 chunks: 'initial',
-    //                 name: 'vendor',
-    //                 enforce: true,
-    //             },
-    //         },
-    //     },
-    // },
     module: {
         rules: [
             {
@@ -47,29 +29,20 @@ module.exports = {
                             [ '@babel/env', { modules: false }],
                             '@babel/react',
                         ],
-                        plugins: [
-                            // '@babel/plugin-proposal-class-properties',
-                            // '@babel/plugin-syntax-dynamic-import',
-                            // '@babel/plugin-proposal-export-default-from',
-                        ],
                     },
                 }],
             },
             {
-                test: /\.css$/,
-                use: [{
-                    loader: 'style-loader',
-                }, {
-                    loader: 'css-loader',
-                }],
-            },
-            {
                 test: /\.scss$/,
-                exclude: /\.module\.scss$/,
                 use: [{
                     loader: 'style-loader',
                 }, {
                     loader: 'css-loader',
+                    // options: {
+                    //     modules: true,
+                    // },
+                }, {
+                    loader: 'postcss-loader',
                 }, {
                     loader: 'sass-loader',
                 }],
