@@ -2,18 +2,27 @@
   "name": "react-ford-ccpa-banner",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "locale-gen": "node src/localization/locale-gen.js",
-    "build": "rm -rf lib && npx babel src --out-dir lib --copy-files"
+    "build": "rm -rf lib && npx babel src --out-dir lib --copy-files",
+    "build1": "rm -rf ./lib/* && webpack --env production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.1",
-    "react-localization": "^1.0.15"
+    "react-localization": "^1.0.15",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.2",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
