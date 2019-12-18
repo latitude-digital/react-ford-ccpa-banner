@@ -25,41 +25,41 @@
     "Alternate Keys": "",
     "English": "California Residents",
     "French": "",
-    "Spanish": "HELLO MICKREY"
+    "Spanish": "Residentes de California"
   },
   "californiaPrivacyContent": {
     "Key": "californiaPrivacyContent",
     "Alternate Keys": "",
     "English": "Exercise your rights under the California Consumer Privacy Act ",
     "French": "",
-    "Spanish": "Exercise your rights under the California Consumer Privacy Act "
+    "Spanish": "Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California "
   },
   "californiaPrivacyButton": {
     "Key": "californiaPrivacyButton",
     "Alternate Keys": "",
     "English": "Do Not Sell My Personal Information",
     "French": "",
-    "Spanish": "Do Not Sell My Personal Information"
+    "Spanish": "No venda mi información personal"
   },
   "here": {
     "Key": "here",
     "Alternate Keys": "",
     "English": "here",
     "French": "",
-    "Spanish": "here"
+    "Spanish": "aquí"
   },
   "privacy": {
     "Key": "privacy",
     "Alternate Keys": "",
     "English": "Privacy",
     "French": "",
-    "Spanish": "Privacy"
+    "Spanish": "CONFIDENCIALIDAD"
   },
   "CAPrivacyRights": {
     "Key": "CAPrivacyRights",
     "Alternate Keys": "",
     "English": "Your CA Privacy Rights",
     "French": "",
-    "Spanish": "Your CA Privacy Rights"
+    "Spanish": "TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA"
   }
 }
