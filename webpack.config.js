@@ -5,6 +5,7 @@ const webpack = require('webpack');
 
 module.exports = {
     target: 'node',
+    devtool: 'source-map',
     mode: 'production',
     entry: {
         index : path.resolve('./src/index.js'),
@@ -16,6 +17,9 @@ module.exports = {
     },
     performance: {
         hints: false,
+    },
+    optimization: {
+        minimize: false
     },
     module: {
         rules: [
