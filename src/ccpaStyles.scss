@@ -13,6 +13,7 @@
   --lincoln-dark-gray: #324047;
   --lincoln-white: #cacdcf;
   --lincoln-red: #f26147;
+  --lincoln-footer-gray: #393939;
 }
 
 @mixin default-container  {
@@ -143,7 +144,7 @@
     text-transform: uppercase;
   }
   .privacyContainer-lincoln {
-    background-color: var(--lincoln-dark-gray);
+    background-color: var(--lincoln-footer-gray);
     font-family: LincolnProximaNovaLight, sans-serif;
     @include default-privacy-container;
   }
