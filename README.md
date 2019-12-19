@@ -5,7 +5,7 @@
 
 
 ```bash
-$ yarn add https://github.com/latitude-digital/react-ford-ccpa-banner
+$ yarn add git@github.com:latitude-digital/react-ford-ccpa-banner.git
 ```
 
 ## Development:
