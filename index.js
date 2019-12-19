@@ -4563,7 +4563,8 @@ function CAPrivacyBanner(props) {
     alt: 'Lincoln Logo',
     width: 20,
     style: {
-      marginRight: '15px'
+      marginRight: '15px',
+      verticalAlign: 'middle'
     }
   }) : null, react_default.a.createElement("a", {
     href: "".concat(privacyLink),
@@ -4579,7 +4580,10 @@ function CAPrivacyBanner(props) {
     className: "footer-img-".concat(team),
     src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
     alt: 'Ford Logo',
-    width: 75
+    width: 75,
+    style: {
+      verticalAlign: 'middle'
+    }
   }) : null) : null);
 }
 
