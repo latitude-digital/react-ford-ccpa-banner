@@ -6,7 +6,7 @@ import L from './localization/get-localized-string.js';
 function CAPrivacyBanner (props) {
   const {
     team = 'ford',
-    language,
+    language = 'en',
     showPrivacy = false,
   } = props;
 
@@ -15,7 +15,7 @@ function CAPrivacyBanner (props) {
   const privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
   const CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#caPrivacy' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
   const privacyText = L('privacy', language);
-  const CAprivacyText = L('CAPrivacyRights', language)
+  const CAprivacyText = L('CAPrivacyRights', language);
 
   return (
     <div>
@@ -43,9 +43,9 @@ function CAPrivacyBanner (props) {
 }
 
 CAPrivacyBanner.propTypes = {
-  team: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
-  showPrivacy: PropTypes.bool.isRequired
+  team: PropTypes.oneOf(['ford', 'lincoln']),
+  language: PropTypes.oneOf(['en', 'es']),
+  showPrivacy: PropTypes.bool.isRequired,
 };
 
 export default CAPrivacyBanner;
