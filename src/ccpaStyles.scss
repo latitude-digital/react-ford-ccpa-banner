@@ -88,7 +88,7 @@
 }
   .container-ford {
     @include default-container;
-    background-color: var(--ford-dark-blue);
+    background: var(--ford-dark-blue);
     font-family: FordAntenna-Regular, sans-serif;
   }
   .header-ford {
@@ -105,12 +105,12 @@
   }
   .button-ford {
     @include default-button;
-    background-color: var(--ford-light-blue);
+    background: var(--ford-light-blue);
     color: var(--ford-white);
     border: var(--ford-light-blue);
   }
   .privacyContainer-ford {
-    background-color: var(--ford-white);
+    background: var(--ford-white);
     font-family: FordAntenna-Regular, sans-serif;
     @include default-privacy-container;
   }
@@ -125,7 +125,7 @@
   }
   .container-lincoln {
     @include default-container;
-    background-color: var(--lincoln-dark-gray);
+    background: var(--lincoln-dark-gray);
     font-family: LincolnProximaNovaLight, sans-serif;
   }
   .header-lincoln {
@@ -146,7 +146,7 @@
   }
   .button-lincoln {
     @include default-button;
-    background-color: var(--lincoln-white);
+    background: var(--lincoln-white);
     color: var(--lincoln-dark-gray);
     border-top: var(--lincoln-white);
     border-bottom: 5px solid var(--lincoln-red);
@@ -156,7 +156,7 @@
     text-transform: uppercase;
   }
   .privacyContainer-lincoln {
-    background-color: var(--lincoln-footer-gray);
+    background: var(--lincoln-footer-gray);
     font-family: LincolnProximaNovaLight, sans-serif;
     @include default-privacy-container;
     @media only screen and (min-width: 376px){
