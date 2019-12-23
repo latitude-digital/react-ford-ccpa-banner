@@ -134,6 +134,7 @@
     text-transform: uppercase;
   }
   .content-lincoln {
+    @include default-content;
     color: var(--lincoln-white);
   }
   .contentLink-lincoln {
