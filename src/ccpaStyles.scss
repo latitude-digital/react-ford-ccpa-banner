@@ -1,10 +1,21 @@
-@import url('https://d2n145t5d2n6zs.cloudfront.net/FordAntennaWGL-Regular.ttf');
-@import url('https://d2n145t5d2n6zs.cloudfront.net/FordAntennaWGL-Light.ttf');
-/*FORD ANTENNA REGULAR AND LIGHT FONTS ^^^^^^*/
-@import url('https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Light.otf');
-@import url('https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Sbold.otf');
-/*LINCOLN PROXIMA NOVA LIGHT AND SEMIBOLD FONTS ^^^^^^*/
-
+@font-face {
+  font-family: 'FordAntenna-Regular';
+  src: url('https://d2n145t5d2n6zs.cloudfront.net/FordAntennaWGL-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LincolnProximaNovaSemibold';
+  src: url('https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Sbold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LincolnProximaNovaLight';
+  src: url('https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --ford-dark-blue : #092A46;
   --ford-light-blue: #2D74B2;
