@@ -18,14 +18,15 @@ function CAPrivacyBanner (props) {
   const CAprivacyText = L('CAPrivacyRights', language);
 
   return (
-    <div>
+    <div className={`${team}`}>
+    <div className={`ca-banner`}>
       <div className={`container-${team}`}>
         <h3 className={`header-${team}`}>{L('californiaPrivacyHeader', language)}</h3>
         <h4 className={`content-${team}`}>{L('californiaPrivacyContent', language)}
           <a href={`${deletePILink}`} className={`contentLink-${team}`} target='_blank'>{L('here', language)}</a >.
         </h4>
         <a href={`${doNotSellPILink}`} target='_blank' >
-          <button className={`button-${team}`}>
+          <button className={`${team}-primary-button`}>
             {L('californiaPrivacyButton', language)}
           </button>
         </a >
@@ -38,6 +39,7 @@ function CAPrivacyBanner (props) {
           {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} style={{verticalAlign: 'middle'}}/> : null }
         </div>
       : null}
+    </div>
     </div>
   );
 }

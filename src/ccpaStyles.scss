@@ -1,74 +1,37 @@
-@font-face {
-  font-family: 'FordAntenna-Regular';
-  src: url('https://d2n145t5d2n6zs.cloudfront.net/FordAntennaWGL-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'LincolnProximaNovaSemibold';
-  src: url('https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Sbold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'LincolnProximaNovaLight';
-  src: url('https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Light.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-:root {
-  --ford-dark-blue : #092A46;
-  --ford-light-blue: #2D74B2;
-  --ford-link-blue: #52A7E6;
-  --ford-white : #F3F3F3;
-  --lincoln-dark-gray: #324047;
-  --lincoln-white: #cacdcf;
-  --lincoln-red: #f26147;
-  --lincoln-footer-gray: #393939;
-}
-
 @mixin default-container  {
   margin: {
     top: 5px
   };
-  padding: 30px 20px;
+  padding: 30px 20px 10px;
   text-align: center;
   width: 100vw;
   z-index: 1000;
+  font-weight: 200;
 }
 @mixin default-header {
   font-family: inherit;
   margin-bottom: 5px;
+  padding: 0;
   @media only screen and (min-width: 376px){
+    font-size: 42px;
+  }
+  @media screen and (max-width: 375px) {
     font-size: 24px;
+  }
+}
+@mixin default-content {
+  font-family: inherit;
+  padding: 0;
+  @media only screen and (min-width: 376px){
+    font-size: 16px;
   }
   @media screen and (max-width: 375px) {
     font-size: 14px;
   }
 }
-@mixin default-content {
-  font-family: inherit;
-  @media only screen and (min-width: 376px){
-    font-size: 16px;
-  }
-  @media screen and (max-width: 375px) {
-    font-size: 11px;
-  }
-}
 @mixin default-content-link {
   font-family: inherit;
   text-decoration: underline;
-}
-@mixin default-button {
-  padding: 10px 20px;
-  border-radius: 0;
-  font-family: inherit;
-  margin: {
-    top: 15px;
-    right: 0;
-    bottom: 20px;
-    left: 0;
-  };
 }
 @mixin default-privacy-container {
   text-align: left;
@@ -86,98 +49,61 @@
       float: right;
   }
 }
-  .container-ford {
-    @include default-container;
-    background: var(--ford-dark-blue);
-    font-family: FordAntenna-Regular, sans-serif;
+.container-ford {
+  @include default-container;
+}
+.header-ford {
+  @include default-header;
+}
+.content-ford {
+  @include default-content;
+}
+.contentLink-ford {
+  @include default-content-link;
+}
+.privacyContainer-ford {
+  @include default-privacy-container;
+}
+.privacyContainerLink-ford {
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 12px;
+}
+.footer-img-ford {
+  @include footer-img-ford-media
+}
+.container-lincoln {
+  @include default-container;
+}
+.header-lincoln {
+  @include default-header;
+  text-transform: uppercase;
+}
+.content-lincoln {
+  @include default-content;
+}
+.contentLink-lincoln {
+  @include default-content-link;
+  text-decoration: underline;
+}
+.privacyContainer-lincoln {
+  @include default-privacy-container;
+  @media only screen and (min-width: 376px){
+    padding: 50px;
   }
-  .header-ford {
-    @include default-header;
-    color: var(--ford-white);
+  @media screen and (max-width: 375px) {
+    padding: 20px 50px;
   }
-  .content-ford {
-    @include default-content;
-    color: var(--ford-white);
-  }
-  .contentLink-ford {
-    @include default-content-link;
-    color: var(--ford-link-blue);
-  }
-  .button-ford {
-    @include default-button;
-    background: var(--ford-light-blue);
-    color: var(--ford-white);
-    border: var(--ford-light-blue);
-  }
-  .privacyContainer-ford {
-    background: var(--ford-white);
-    font-family: FordAntenna-Regular, sans-serif;
-    @include default-privacy-container;
-  }
-  .privacyContainerLink-ford {
-    color: var(--ford-dark-grey);
-    text-decoration: none;
-    padding-right: 30px;
-    font-size: 12px;
-  }
-  .footer-img-ford {
-    @include footer-img-ford-media
-  }
-  .container-lincoln {
-    @include default-container;
-    background: var(--lincoln-dark-gray);
-    font-family: LincolnProximaNovaLight, sans-serif;
-  }
-  .header-lincoln {
-    @include default-header;
-    color: var(--lincoln-white);
-    text-transform: uppercase;
-  }
-  .content-lincoln {
-    @include default-content;
-    color: var(--lincoln-white);
-  }
-  .contentLink-lincoln {
-    @include default-content-link;
-    color: var(--lincoln-white);
-    text-decoration-color: var(--lincoln-red);
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-family: LincolnProximaNovaSemibold, sans-serif !important;
-  }
-  .button-lincoln {
-    @include default-button;
-    background: var(--lincoln-white);
-    color: var(--lincoln-dark-gray);
-    border-top: var(--lincoln-white);
-    border-bottom: 5px solid var(--lincoln-red);
-    border-left: var(--lincoln-white);
-    border-right: var(--lincoln-white);
-    font-family: LincolnProximaNovaSemibold, sans-serif !important;
-    text-transform: uppercase;
-  }
-  .privacyContainer-lincoln {
-    background: var(--lincoln-footer-gray);
-    font-family: LincolnProximaNovaLight, sans-serif;
-    @include default-privacy-container;
-    @media only screen and (min-width: 376px){
-      padding: 50px;
-    }
-    @media screen and (max-width: 375px) {
-      padding: 20px 50px;
-    }
-  }
-  .privacyContainerLink-lincoln {
-    color: var(--lincoln-white);
-    text-transform: uppercase;
-    padding-right: 15px;
-    font-size: 12px;
-  }
-  .linkDivider-lincoln {
-    color: var(--lincoln-white);
-    padding-right: 15px;
-  }
-  a:hover {
-    text-decoration: none;
-  }
+}
+.privacyContainerLink-lincoln {
+  padding-right: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.linkDivider-lincoln {
+  padding-right: 15px;
+}
+a:hover {
+  text-decoration: none;
+}
 
