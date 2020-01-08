@@ -3664,7 +3664,7 @@ if (content.locals) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(13);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@font-face{font-family:'FordAntenna-Regular';src:url(\"https://d2n145t5d2n6zs.cloudfront.net/FordAntennaWGL-Regular.ttf\") format(\"truetype\");font-weight:normal;font-style:normal}@font-face{font-family:'LincolnProximaNovaSemibold';src:url(\"https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Sbold.otf\") format(\"opentype\");font-weight:normal;font-style:normal}@font-face{font-family:'LincolnProximaNovaLight';src:url(\"https://d2n145t5d2n6zs.cloudfront.net/Lincoln-ProximaNova-Light.otf\") format(\"opentype\");font-weight:normal;font-style:normal}html{--ford-dark-blue: #092A46;--ford-light-blue: #2D74B2;--ford-link-blue: #52A7E6;--ford-white: #F3F3F3;--lincoln-dark-gray: #324047;--lincoln-white: #cacdcf;--lincoln-red: #f26147;--lincoln-footer-gray: #393939}.container-ford{margin-top:5px;padding:30px 20px;text-align:center;width:100vw;z-index:1000;background:var(--ford-dark-blue);font-family:FordAntenna-Regular, sans-serif}.header-ford{font-family:inherit;margin-bottom:5px;color:var(--ford-white)}@media only screen and (min-width: 376px){.header-ford{font-size:24px}}@media screen and (max-width: 375px){.header-ford{font-size:14px}}.content-ford{font-family:inherit;color:var(--ford-white)}@media only screen and (min-width: 376px){.content-ford{font-size:16px}}@media screen and (max-width: 375px){.content-ford{font-size:11px}}.contentLink-ford{font-family:inherit;text-decoration:underline;color:var(--ford-link-blue)}.button-ford{padding:10px 20px;border-radius:0;font-family:inherit;margin-top:15px;margin-right:0;margin-bottom:20px;margin-left:0;background:var(--ford-light-blue);color:var(--ford-white);border:var(--ford-light-blue)}.privacyContainer-ford{background:var(--ford-white);font-family:FordAntenna-Regular, sans-serif;text-align:left;width:100vw;z-index:1000;padding:50px}.privacyContainerLink-ford{color:var(--ford-dark-grey);text-decoration:none;padding-right:30px;font-size:12px}@media screen and (max-width: 375px){.footer-img-ford{float:left;margin-top:10px}}@media only screen and (min-width: 376px){.footer-img-ford{float:right}}.container-lincoln{margin-top:5px;padding:30px 20px;text-align:center;width:100vw;z-index:1000;background:var(--lincoln-dark-gray);font-family:LincolnProximaNovaLight, sans-serif}.header-lincoln{font-family:inherit;margin-bottom:5px;color:var(--lincoln-white);text-transform:uppercase}@media only screen and (min-width: 376px){.header-lincoln{font-size:24px}}@media screen and (max-width: 375px){.header-lincoln{font-size:14px}}.content-lincoln{font-family:inherit;color:var(--lincoln-white)}@media only screen and (min-width: 376px){.content-lincoln{font-size:16px}}@media screen and (max-width: 375px){.content-lincoln{font-size:11px}}.contentLink-lincoln{font-family:inherit;text-decoration:underline;color:var(--lincoln-white);-webkit-text-decoration-color:var(--lincoln-red);text-decoration-color:var(--lincoln-red);text-decoration:underline;text-transform:uppercase;font-family:LincolnProximaNovaSemibold, sans-serif !important}.button-lincoln{padding:10px 20px;border-radius:0;font-family:inherit;margin-top:15px;margin-right:0;margin-bottom:20px;margin-left:0;background:var(--lincoln-white);color:var(--lincoln-dark-gray);border-top:var(--lincoln-white);border-bottom:5px solid var(--lincoln-red);border-left:var(--lincoln-white);border-right:var(--lincoln-white);font-family:LincolnProximaNovaSemibold, sans-serif !important;text-transform:uppercase}.privacyContainer-lincoln{background:var(--lincoln-footer-gray);font-family:LincolnProximaNovaLight, sans-serif;text-align:left;width:100vw;z-index:1000;padding:50px}@media only screen and (min-width: 376px){.privacyContainer-lincoln{padding:50px}}@media screen and (max-width: 375px){.privacyContainer-lincoln{padding:20px 50px}}.privacyContainerLink-lincoln{color:var(--lincoln-white);text-transform:uppercase;padding-right:15px;font-size:12px}.linkDivider-lincoln{color:var(--lincoln-white);padding-right:15px}a:hover{text-decoration:none}\n", ""]);
+exports.push([module.i, ".container-ford{margin-top:5px;padding:30px 20px 10px;text-align:center;width:100vw;z-index:1000;font-weight:200}.header-ford{font-family:inherit;margin-bottom:5px;padding:0}@media only screen and (min-width: 376px){.header-ford{font-size:42px}}@media screen and (max-width: 375px){.header-ford{font-size:24px}}.content-ford{font-family:inherit;padding:0}@media only screen and (min-width: 376px){.content-ford{font-size:16px}}@media screen and (max-width: 375px){.content-ford{font-size:14px}}.contentLink-ford{font-family:inherit;text-decoration:underline}.privacyContainer-ford{text-align:left;width:100vw;z-index:1000;padding:50px}.privacyContainerLink-ford{text-decoration:none;padding-right:30px;font-size:12px}@media screen and (max-width: 375px){.footer-img-ford{float:left;margin-top:10px}}@media only screen and (min-width: 376px){.footer-img-ford{float:right}}.container-lincoln{margin-top:5px;padding:30px 20px 10px;text-align:center;width:100vw;z-index:1000;font-weight:200}.header-lincoln{font-family:inherit;margin-bottom:5px;padding:0;text-transform:uppercase}@media only screen and (min-width: 376px){.header-lincoln{font-size:42px}}@media screen and (max-width: 375px){.header-lincoln{font-size:24px}}.content-lincoln{font-family:inherit;padding:0}@media only screen and (min-width: 376px){.content-lincoln{font-size:16px}}@media screen and (max-width: 375px){.content-lincoln{font-size:14px}}.contentLink-lincoln{font-family:inherit;text-decoration:underline;text-decoration:underline}.privacyContainer-lincoln{text-align:left;width:100vw;z-index:1000;padding:50px}@media only screen and (min-width: 376px){.privacyContainer-lincoln{padding:50px}}@media screen and (max-width: 375px){.privacyContainer-lincoln{padding:20px 50px}}.privacyContainerLink-lincoln{padding-right:15px;font-size:12px;text-transform:uppercase}.linkDivider-lincoln{padding-right:15px}a:hover{text-decoration:none}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4537,7 +4537,11 @@ function CAPrivacyBanner(props) {
   var CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#caPrivacy' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
   var privacyText = get_localized_string('privacy', language);
   var CAprivacyText = get_localized_string('CAPrivacyRights', language);
-  return react_default.a.createElement("div", null, react_default.a.createElement("div", {
+  return react_default.a.createElement("div", {
+    className: "".concat(team)
+  }, react_default.a.createElement("div", {
+    className: "ca-banner"
+  }, react_default.a.createElement("div", {
     className: "container-".concat(team)
   }, react_default.a.createElement("h3", {
     className: "header-".concat(team)
@@ -4551,7 +4555,7 @@ function CAPrivacyBanner(props) {
     href: "".concat(doNotSellPILink),
     target: "_blank"
   }, react_default.a.createElement("button", {
-    className: "button-".concat(team)
+    className: "".concat(team, "-primary-button")
   }, get_localized_string('californiaPrivacyButton', language)))), showPrivacy ? react_default.a.createElement("div", {
     className: "privacyContainer-".concat(team)
   }, team === 'lincoln' ? react_default.a.createElement("img", {
@@ -4580,7 +4584,7 @@ function CAPrivacyBanner(props) {
     style: {
       verticalAlign: 'middle'
     }
-  }) : null) : null);
+  }) : null) : null));
 }
 
 CAPrivacyBanner.propTypes = {
