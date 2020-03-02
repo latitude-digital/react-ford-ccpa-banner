@@ -4586,7 +4586,9 @@ function CAPrivacyBanner(props) {
     },
     className: "privacyContainerLink-".concat(team),
     onClick: openCookieSettings
-  }, cookieSettingsText), react_default.a.createElement("a", {
+  }, cookieSettingsText), team === 'lincoln' ? react_default.a.createElement("span", {
+    className: "linkDivider-".concat(team)
+  }, "|") : null, react_default.a.createElement("a", {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
