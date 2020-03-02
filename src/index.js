@@ -16,6 +16,12 @@ function CAPrivacyBanner (props) {
   const CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#caPrivacy' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
   const privacyText = L('privacy', language);
   const CAprivacyText = L('CAPrivacyRights', language);
+  const cookieSettingsText = L('cookieSettings', language);
+
+  function openCookieSettings() {
+    const { Optanon } = window;
+    Optanon && Optanon.ToggleInfoDisplay && Optanon.ToggleInfoDisplay();
+  }
 
   return (
     <div className={`${team}`}>
@@ -35,6 +41,7 @@ function CAPrivacyBanner (props) {
         <div className={`privacyContainer-${team}`}>
           {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px', verticalAlign: 'middle'}}/> : null }
           <a href={`${privacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{privacyText}</a >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
+          <span style={{ cursor: 'pointer' }} className={`privacyContainerLink-${team}`} onClick={openCookieSettings}>{cookieSettingsText}</span >
           <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{CAprivacyText}</a >
           {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} style={{verticalAlign: 'middle'}}/> : null }
         </div>

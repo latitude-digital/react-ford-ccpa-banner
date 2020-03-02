@@ -463,7 +463,7 @@ exports.default = _localizedStrings2.default;
 /* 7 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"en\":{\"Primary Language Code\":\"EN\",\"Default To\":\"EN\",\"Language Codes\":\"EN,AU,CA, EU, ZA\",\"californiaPrivacyHeader\":\"California Residents\",\"californiaPrivacyContent\":\"Exercise your rights under the California Consumer Privacy Act \",\"californiaPrivacyButton\":\"Do Not Sell My Personal Information\",\"here\":\"here\",\"privacy\":\"Privacy\",\"CAPrivacyRights\":\"Your CA Privacy Rights\"},\"fr\":{\"Primary Language Code\":\"FR\",\"Default To\":\"FR\",\"Language Codes\":\"CA, BE-FR, CH, FR\",\"californiaPrivacyHeader\":\"\",\"californiaPrivacyContent\":\"\",\"californiaPrivacyButton\":\"\",\"here\":\"\",\"privacy\":\"\",\"CAPrivacyRights\":\"\"},\"es\":{\"Primary Language Code\":\"ES\",\"Default To\":\"ES\",\"Language Codes\":\"US,ES\",\"californiaPrivacyHeader\":\"Residentes de California\",\"californiaPrivacyContent\":\"Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California \",\"californiaPrivacyButton\":\"No venda mi información personal\",\"here\":\"aquí\",\"privacy\":\"CONFIDENCIALIDAD\",\"CAPrivacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA\"}}");
+module.exports = JSON.parse("{\"en\":{\"Primary Language Code\":\"EN\",\"Default To\":\"EN\",\"Language Codes\":\"EN,AU,CA, EU, ZA\",\"californiaPrivacyHeader\":\"California Residents\",\"californiaPrivacyContent\":\"Exercise your rights under the California Consumer Privacy Act \",\"californiaPrivacyButton\":\"Do Not Sell My Personal Information\",\"here\":\"here\",\"privacy\":\"Privacy\",\"CAPrivacyRights\":\"Your CA Privacy Rights\",\"cookieSettings\":\"Cookie Settings\"},\"fr\":{\"Primary Language Code\":\"FR\",\"Default To\":\"FR\",\"Language Codes\":\"CA, BE-FR, CH, FR\",\"californiaPrivacyHeader\":\"\",\"californiaPrivacyContent\":\"\",\"californiaPrivacyButton\":\"\",\"here\":\"\",\"privacy\":\"\",\"CAPrivacyRights\":\"\",\"cookieSettings\":\"\"},\"es\":{\"Primary Language Code\":\"ES\",\"Default To\":\"ES\",\"Language Codes\":\"US,ES\",\"californiaPrivacyHeader\":\"Residentes de California\",\"californiaPrivacyContent\":\"Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California \",\"californiaPrivacyButton\":\"No venda mi información personal\",\"here\":\"aquí\",\"privacy\":\"CONFIDENCIALIDAD\",\"CAPrivacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA\",\"cookieSettings\":\"Configuraciones de Cookies\"}}");
 
 /***/ }),
 /* 8 */
@@ -4537,6 +4537,14 @@ function CAPrivacyBanner(props) {
   var CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#caPrivacy' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
   var privacyText = get_localized_string('privacy', language);
   var CAprivacyText = get_localized_string('CAPrivacyRights', language);
+  var cookieSettingsText = get_localized_string('cookieSettings', language);
+
+  function openCookieSettings() {
+    var _window = window,
+        Optanon = _window.Optanon;
+    Optanon && Optanon.ToggleInfoDisplay && Optanon.ToggleInfoDisplay();
+  }
+
   return react_default.a.createElement("div", {
     className: "".concat(team)
   }, react_default.a.createElement("div", {
@@ -4572,7 +4580,13 @@ function CAPrivacyBanner(props) {
     target: "_blank"
   }, privacyText), team === 'lincoln' ? react_default.a.createElement("span", {
     className: "linkDivider-".concat(team)
-  }, "|") : null, react_default.a.createElement("a", {
+  }, "|") : null, react_default.a.createElement("span", {
+    style: {
+      cursor: 'pointer'
+    },
+    className: "privacyContainerLink-".concat(team),
+    onClick: openCookieSettings
+  }, cookieSettingsText), react_default.a.createElement("a", {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
