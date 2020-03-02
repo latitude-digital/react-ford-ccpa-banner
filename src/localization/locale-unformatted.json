@@ -61,5 +61,12 @@
     "English": "Your CA Privacy Rights",
     "French": "",
     "Spanish": "TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA"
+  },
+  "cookieSettings": {
+    "Key": "cookieSettings",
+    "Alternate Keys": "",
+    "English": "Cookie Settings",
+    "French": "",
+    "Spanish": "Configuraciones de Cookies"
   }
 }
