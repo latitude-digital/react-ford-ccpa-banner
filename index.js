@@ -4551,9 +4551,9 @@ function CAPrivacyBanner(props) {
     className: "ca-banner"
   }, react_default.a.createElement("div", {
     className: "container-".concat(team)
-  }, react_default.a.createElement("h3", {
+  }, react_default.a.createElement("p", {
     className: "header-".concat(team)
-  }, get_localized_string('californiaPrivacyHeader', language)), react_default.a.createElement("h4", {
+  }, get_localized_string('californiaPrivacyHeader', language)), react_default.a.createElement("p", {
     className: "content-".concat(team)
   }, get_localized_string('californiaPrivacyContent', language), react_default.a.createElement("a", {
     href: "".concat(deletePILink),

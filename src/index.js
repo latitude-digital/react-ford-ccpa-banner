@@ -27,10 +27,10 @@ function CAPrivacyBanner (props) {
     <div className={`${team}`}>
     <div className={`ca-banner`}>
       <div className={`container-${team}`}>
-        <h3 className={`header-${team}`}>{L('californiaPrivacyHeader', language)}</h3>
-        <h4 className={`content-${team}`}>{L('californiaPrivacyContent', language)}
+        <p className={`header-${team}`}>{L('californiaPrivacyHeader', language)}</p>
+        <p className={`content-${team}`}>{L('californiaPrivacyContent', language)}
           <a href={`${deletePILink}`} className={`contentLink-${team}`} target='_blank'>{L('here', language)}</a >.
-        </h4>
+        </p>
         <a href={`${doNotSellPILink}`} target='_blank' >
           <button className={`${team}-primary-button`}>
             {L('californiaPrivacyButton', language)}
