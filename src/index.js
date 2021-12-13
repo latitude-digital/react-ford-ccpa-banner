@@ -8,7 +8,7 @@ function CAPrivacyBanner (props) {
     team = 'ford',
     language = 'en',
     showPrivacy = false,
-    containerStyle = ''
+    containerStyle = null
   } = props;
 
   const deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
