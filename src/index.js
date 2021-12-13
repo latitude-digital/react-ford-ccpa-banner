@@ -8,6 +8,7 @@ function CAPrivacyBanner (props) {
     team = 'ford',
     language = 'en',
     showPrivacy = false,
+    containerStyle = ''
   } = props;
 
   const deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
@@ -26,7 +27,7 @@ function CAPrivacyBanner (props) {
   return (
     <div className={`${team}`}>
     <div className={`ca-banner`}>
-      <div className={`container-${team}`}>
+      <div className={`container-${team}`} style={containerStyle}>
         <p className={`header-${team}`}>{L('californiaPrivacyHeader', language)}</p>
         <p className={`content-${team}`}>{L('californiaPrivacyContent', language)}
           <a href={`${deletePILink}`} className={`contentLink-${team}`} target='_blank'>{L('here', language)}</a >.
