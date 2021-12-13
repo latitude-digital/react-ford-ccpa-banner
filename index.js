@@ -4532,7 +4532,7 @@ function CAPrivacyBanner(props) {
       _props$showPrivacy = props.showPrivacy,
       showPrivacy = _props$showPrivacy === void 0 ? false : _props$showPrivacy,
       _props$containerStyle = props.containerStyle,
-      containerStyle = _props$containerStyle === void 0 ? '' : _props$containerStyle;
+      containerStyle = _props$containerStyle === void 0 ? null : _props$containerStyle;
   var deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
   var doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   var privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
