@@ -4532,7 +4532,9 @@ function CAPrivacyBanner(props) {
       _props$showPrivacy = props.showPrivacy,
       showPrivacy = _props$showPrivacy === void 0 ? false : _props$showPrivacy,
       _props$containerStyle = props.containerStyle,
-      containerStyle = _props$containerStyle === void 0 ? null : _props$containerStyle;
+      containerStyle = _props$containerStyle === void 0 ? null : _props$containerStyle,
+      _props$privacyContain = props.privacyContainerStyle,
+      privacyContainerStyle = _props$privacyContain === void 0 ? null : _props$privacyContain;
   var deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
   var doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   var privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
@@ -4568,7 +4570,8 @@ function CAPrivacyBanner(props) {
   }, react_default.a.createElement("button", {
     className: "".concat(team, "-primary-button")
   }, get_localized_string('californiaPrivacyButton', language)))), showPrivacy ? react_default.a.createElement("div", {
-    className: "privacyContainer-".concat(team)
+    className: "privacyContainer-".concat(team),
+    style: privacyContainerStyle && privacyContainerStyle
   }, team === 'lincoln' ? react_default.a.createElement("img", {
     src: 'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png',
     alt: 'Lincoln Logo',
