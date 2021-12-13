@@ -4553,7 +4553,7 @@ function CAPrivacyBanner(props) {
     className: "ca-banner"
   }, react_default.a.createElement("div", {
     className: "container-".concat(team),
-    style: containerStyle
+    style: containerStyle && containerStyle
   }, react_default.a.createElement("p", {
     className: "header-".concat(team)
   }, get_localized_string('californiaPrivacyHeader', language)), react_default.a.createElement("p", {

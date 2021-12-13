@@ -27,7 +27,7 @@ function CAPrivacyBanner (props) {
   return (
     <div className={`${team}`}>
     <div className={`ca-banner`}>
-      <div className={`container-${team}`} style={containerStyle}>
+      <div className={`container-${team}`} style={containerStyle && containerStyle}>
         <p className={`header-${team}`}>{L('californiaPrivacyHeader', language)}</p>
         <p className={`content-${team}`}>{L('californiaPrivacyContent', language)}
           <a href={`${deletePILink}`} className={`contentLink-${team}`} target='_blank'>{L('here', language)}</a >.
