@@ -4534,7 +4534,9 @@ function CAPrivacyBanner(props) {
       _props$containerStyle = props.containerStyle,
       containerStyle = _props$containerStyle === void 0 ? null : _props$containerStyle,
       _props$privacyContain = props.privacyContainerStyle,
-      privacyContainerStyle = _props$privacyContain === void 0 ? null : _props$privacyContain;
+      privacyContainerStyle = _props$privacyContain === void 0 ? null : _props$privacyContain,
+      _props$dtgTermsLink = props.dtgTermsLink,
+      dtgTermsLink = _props$dtgTermsLink === void 0 ? null : _props$dtgTermsLink;
   var deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
   var doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   var privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
@@ -4598,7 +4600,11 @@ function CAPrivacyBanner(props) {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, CAprivacyText), team === 'ford' ? react_default.a.createElement("img", {
+  }, CAprivacyText), dtgTermsLink ? react_default.a.createElement("a", {
+    href: dtgTermsLink,
+    className: "privacyContainerLink-".concat(team),
+    target: "_blank"
+  }, "'Terms and Conditions'") : null, team === 'ford' ? react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
     src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
     alt: 'Ford Logo',
