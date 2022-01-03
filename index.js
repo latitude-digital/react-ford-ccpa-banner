@@ -4600,11 +4600,13 @@ function CAPrivacyBanner(props) {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, CAprivacyText), dtgTermsLink ? react_default.a.createElement("a", {
+  }, CAprivacyText), "dtgTermsLink ? ", react_default.a.createElement("span", {
+    className: "linkDivider-".concat(team)
+  }, "|"), " : null}", dtgTermsLink ? react_default.a.createElement("a", {
     href: dtgTermsLink,
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, "'Terms and Conditions'") : null, team === 'ford' ? react_default.a.createElement("img", {
+  }, "Terms and Conditions") : null, team === 'ford' ? react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
     src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
     alt: 'Ford Logo',
