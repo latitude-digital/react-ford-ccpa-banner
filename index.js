@@ -4600,9 +4600,9 @@ function CAPrivacyBanner(props) {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, CAprivacyText), "dtgTermsLink ? ", react_default.a.createElement("span", {
+  }, CAprivacyText), dtgTermsLink ? react_default.a.createElement("span", {
     className: "linkDivider-".concat(team)
-  }, "|"), " : null}", dtgTermsLink ? react_default.a.createElement("a", {
+  }, "|") : null, dtgTermsLink ? react_default.a.createElement("a", {
     href: dtgTermsLink,
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
