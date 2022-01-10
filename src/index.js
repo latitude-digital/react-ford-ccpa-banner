@@ -11,6 +11,7 @@ function CAPrivacyBanner (props) {
     containerStyle = null,
     privacyContainerStyle = null,
     dtgTermsLink = null,
+    imgStyle = null
   } = props;
 
   const deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
@@ -42,7 +43,7 @@ function CAPrivacyBanner (props) {
       </div>
       {showPrivacy ?
         <div className={`privacyContainer-${team}`} style={privacyContainerStyle && privacyContainerStyle}>
-          {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px', verticalAlign: 'middle'}}/> : null }
+          {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px', verticalAlign: 'middle', ...imgStyle}}/> : null }
           <a href={`${privacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{privacyText}</a >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
           <span style={{ cursor: 'pointer' }} className={`privacyContainerLink-${team}`} onClick={openCookieSettings}>{cookieSettingsText}</span >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
           <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{CAprivacyText}</a >{dtgTermsLink ? <span className={`linkDivider-${team}`}>|</span> : null}

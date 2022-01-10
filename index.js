@@ -4519,6 +4519,12 @@ function getLocalizedString(key, lang) {
 
 /* harmony default export */ var get_localized_string = (getLocalizedString);
 // CONCATENATED MODULE: ./src/index.js
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -4536,7 +4542,9 @@ function CAPrivacyBanner(props) {
       _props$privacyContain = props.privacyContainerStyle,
       privacyContainerStyle = _props$privacyContain === void 0 ? null : _props$privacyContain,
       _props$dtgTermsLink = props.dtgTermsLink,
-      dtgTermsLink = _props$dtgTermsLink === void 0 ? null : _props$dtgTermsLink;
+      dtgTermsLink = _props$dtgTermsLink === void 0 ? null : _props$dtgTermsLink,
+      _props$imgStyle = props.imgStyle,
+      imgStyle = _props$imgStyle === void 0 ? null : _props$imgStyle;
   var deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
   var doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   var privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
@@ -4578,10 +4586,10 @@ function CAPrivacyBanner(props) {
     src: 'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png',
     alt: 'Lincoln Logo',
     width: 20,
-    style: {
+    style: _objectSpread({
       marginRight: '15px',
       verticalAlign: 'middle'
-    }
+    }, imgStyle)
   }) : null, react_default.a.createElement("a", {
     href: "".concat(privacyLink),
     className: "privacyContainerLink-".concat(team),
