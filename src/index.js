@@ -60,7 +60,7 @@ function CAPrivacyBanner (props) {
               return (
                 <>
                   {addDivider(true)}
-                  <a href={link.url} className={`privacyContainerLink-${team}`} target={link.target}>${link.text}</a >
+                  <a href={link.url} className={`privacyContainerLink-${team}`} target={link.target}>{link.text}</a >
                 </>
               )
             })

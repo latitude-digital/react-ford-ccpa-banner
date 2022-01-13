@@ -4191,7 +4191,7 @@ function CAPrivacyBanner(props) {
       href: link.url,
       className: "privacyContainerLink-".concat(team),
       target: link.target
-    }, "$", link.text));
+    }, link.text));
   }), team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
     src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
