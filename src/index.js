@@ -11,6 +11,7 @@ function CAPrivacyBanner (props) {
     containerStyle = null,
     privacyContainerStyle = null,
     dtgTermsLink = null,
+    guidelinesLink = null,
     imgStyle = null
   } = props;
 
@@ -25,6 +26,10 @@ function CAPrivacyBanner (props) {
   function openCookieSettings() {
     const { Optanon } = window;
     Optanon && Optanon.ToggleInfoDisplay && Optanon.ToggleInfoDisplay();
+  }
+  const addDivider = (field) => {
+      if (!field) return null;
+      return <span className={`linkDivider-${team}`}>|</span>
   }
 
   return (
@@ -44,10 +49,15 @@ function CAPrivacyBanner (props) {
       {showPrivacy ?
         <div className={`privacyContainer-${team}`} style={privacyContainerStyle && privacyContainerStyle}>
           {team === 'lincoln' ? <img src={'https://d2n145t5d2n6zs.cloudfront.net/lincoln_logo_whitesymbol.png'} alt={'Lincoln Logo'} width={20} style={{marginRight: '15px', verticalAlign: 'middle', ...imgStyle}}/> : null }
-          <a href={`${privacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{privacyText}</a >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
-          <span style={{ cursor: 'pointer' }} className={`privacyContainerLink-${team}`} onClick={openCookieSettings}>{cookieSettingsText}</span >{team === 'lincoln' ? <span className={`linkDivider-${team}`}>|</span> : null}
-          <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{CAprivacyText}</a >{dtgTermsLink ? <span className={`linkDivider-${team}`}>|</span> : null}
+          <a href={`${privacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{privacyText}</a >
+          {addDivider(team === 'lincoln')}
+          <span style={{ cursor: 'pointer' }} className={`privacyContainerLink-${team}`} onClick={openCookieSettings}>{cookieSettingsText}</span >
+          {addDivider(team === 'lincoln')}
+          <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{CAprivacyText}</a >
+          {addDivider(dtgTermsLink)}
           {dtgTermsLink ? <a href={dtgTermsLink} className={`privacyContainerLink-${team}`} target='_blank'>Terms and Conditions</a > : null}
+          {addDivider(guidelinesLink)}
+          {guidelinesLink ? <a href={guidelinesLink} className={`privacyContainerLink-${team}`} target='_blank'>Organization Guidelines</a > : null}
           {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} style={{verticalAlign: 'middle'}}/> : null }
         </div>
       : null}

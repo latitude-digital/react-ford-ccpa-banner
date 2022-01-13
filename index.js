@@ -4114,6 +4114,8 @@ function CAPrivacyBanner(props) {
       privacyContainerStyle = _props$privacyContain === void 0 ? null : _props$privacyContain,
       _props$dtgTermsLink = props.dtgTermsLink,
       dtgTermsLink = _props$dtgTermsLink === void 0 ? null : _props$dtgTermsLink,
+      _props$guidelinesLink = props.guidelinesLink,
+      guidelinesLink = _props$guidelinesLink === void 0 ? null : _props$guidelinesLink,
       _props$imgStyle = props.imgStyle,
       imgStyle = _props$imgStyle === void 0 ? null : _props$imgStyle;
   var deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
@@ -4129,6 +4131,13 @@ function CAPrivacyBanner(props) {
         Optanon = _window.Optanon;
     Optanon && Optanon.ToggleInfoDisplay && Optanon.ToggleInfoDisplay();
   }
+
+  var addDivider = function addDivider(field) {
+    if (!field) return null;
+    return /*#__PURE__*/react_default.a.createElement("span", {
+      className: "linkDivider-".concat(team)
+    }, "|");
+  };
 
   return /*#__PURE__*/react_default.a.createElement("div", {
     className: "".concat(team)
@@ -4165,27 +4174,25 @@ function CAPrivacyBanner(props) {
     href: "".concat(privacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, privacyText), team === 'lincoln' ? /*#__PURE__*/react_default.a.createElement("span", {
-    className: "linkDivider-".concat(team)
-  }, "|") : null, /*#__PURE__*/react_default.a.createElement("span", {
+  }, privacyText), addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("span", {
     style: {
       cursor: 'pointer'
     },
     className: "privacyContainerLink-".concat(team),
     onClick: openCookieSettings
-  }, cookieSettingsText), team === 'lincoln' ? /*#__PURE__*/react_default.a.createElement("span", {
-    className: "linkDivider-".concat(team)
-  }, "|") : null, /*#__PURE__*/react_default.a.createElement("a", {
+  }, cookieSettingsText), addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, CAprivacyText), dtgTermsLink ? /*#__PURE__*/react_default.a.createElement("span", {
-    className: "linkDivider-".concat(team)
-  }, "|") : null, dtgTermsLink ? /*#__PURE__*/react_default.a.createElement("a", {
+  }, CAprivacyText), addDivider(dtgTermsLink), dtgTermsLink ? /*#__PURE__*/react_default.a.createElement("a", {
     href: dtgTermsLink,
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, "Terms and Conditions") : null, team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
+  }, "Terms and Conditions") : null, addDivider(guidelinesLink), guidelinesLink ? /*#__PURE__*/react_default.a.createElement("a", {
+    href: guidelinesLink,
+    className: "privacyContainerLink-".concat(team),
+    target: "_blank"
+  }, "Organization Guidelines") : null, team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
     src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
     alt: 'Ford Logo',
