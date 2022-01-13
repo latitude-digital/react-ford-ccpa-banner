@@ -10,6 +10,7 @@ function CAPrivacyBanner (props) {
     showPrivacy = false,
     containerStyle = null,
     privacyContainerStyle = null,
+    otherLinks = [],
     dtgTermsLink = null,
     guidelinesLink = null,
     imgStyle = null
@@ -54,10 +55,16 @@ function CAPrivacyBanner (props) {
           <span style={{ cursor: 'pointer' }} className={`privacyContainerLink-${team}`} onClick={openCookieSettings}>{cookieSettingsText}</span >
           {addDivider(team === 'lincoln')}
           <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{CAprivacyText}</a >
-          {addDivider(dtgTermsLink)}
-          {dtgTermsLink ? <a href={dtgTermsLink} className={`privacyContainerLink-${team}`} target='_blank'>Terms and Conditions</a > : null}
-          {addDivider(guidelinesLink)}
-          {guidelinesLink ? <a href={guidelinesLink} className={`privacyContainerLink-${team}`} target='_blank'>Organization Guidelines</a > : null}
+          {
+            otherLinks.map((link) => {
+              return (
+                <>
+                  {addDivider(true)}
+                  <a href={link.url} className={`privacyContainerLink-${team}`} target={link.target}>${link.text}</a >
+                </>
+              )
+            })
+          }
           {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} style={{verticalAlign: 'middle'}}/> : null }
         </div>
       : null}
