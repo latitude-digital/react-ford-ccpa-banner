@@ -4112,6 +4112,8 @@ function CAPrivacyBanner(props) {
       containerStyle = _props$containerStyle === void 0 ? null : _props$containerStyle,
       _props$privacyContain = props.privacyContainerStyle,
       privacyContainerStyle = _props$privacyContain === void 0 ? null : _props$privacyContain,
+      _props$otherLinks = props.otherLinks,
+      otherLinks = _props$otherLinks === void 0 ? [] : _props$otherLinks,
       _props$dtgTermsLink = props.dtgTermsLink,
       dtgTermsLink = _props$dtgTermsLink === void 0 ? null : _props$dtgTermsLink,
       _props$guidelinesLink = props.guidelinesLink,
@@ -4184,15 +4186,13 @@ function CAPrivacyBanner(props) {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, CAprivacyText), addDivider(dtgTermsLink), dtgTermsLink ? /*#__PURE__*/react_default.a.createElement("a", {
-    href: dtgTermsLink,
-    className: "privacyContainerLink-".concat(team),
-    target: "_blank"
-  }, "Terms and Conditions") : null, addDivider(guidelinesLink), guidelinesLink ? /*#__PURE__*/react_default.a.createElement("a", {
-    href: guidelinesLink,
-    className: "privacyContainerLink-".concat(team),
-    target: "_blank"
-  }, "Organization Guidelines") : null, team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
+  }, CAprivacyText), otherLinks.map(function (link) {
+    return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, addDivider(true), /*#__PURE__*/react_default.a.createElement("a", {
+      href: link.url,
+      className: "privacyContainerLink-".concat(team),
+      target: link.target
+    }, "$", link.text));
+  }), team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
     src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
     alt: 'Ford Logo',
