@@ -4187,7 +4187,7 @@ function CAPrivacyBanner(props) {
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
   }, CAprivacyText), otherLinks.map(function (link) {
-    return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, addDivider(true), /*#__PURE__*/react_default.a.createElement("a", {
+    return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
       href: link.url,
       className: "privacyContainerLink-".concat(team),
       target: link.target
