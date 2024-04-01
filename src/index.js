@@ -65,7 +65,7 @@ function CAPrivacyBanner (props) {
               )
             })
           }
-          {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png'} alt={'Ford Logo'} width={75} style={{verticalAlign: 'middle'}}/> : null }
+          {team === 'ford' ? <img className={`footer-img-${team}`} src={'https://cdn.latitudewebservices.com/headers/images/ford_script.png'} alt={'Ford Logo'} width={75} style={{verticalAlign: 'middle'}}/> : null }
         </div>
       : null}
     </div>
