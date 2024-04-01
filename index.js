@@ -4194,7 +4194,7 @@ function CAPrivacyBanner(props) {
     }, link.text));
   }), team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
-    src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
+    src: 'https://cdn.latitudewebservices.com/headers/images/ford_script.png',
     alt: 'Ford Logo',
     width: 75,
     style: {
