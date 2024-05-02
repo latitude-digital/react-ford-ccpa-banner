@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ccpaStyles.scss';
 import L from './localization/get-localized-string.js';
-// import ccpaIcon from '../ccpa-icon-ford_275x132.png';
 function CAPrivacyBanner (props) {
   const {
     team = 'ford',
@@ -20,11 +19,12 @@ function CAPrivacyBanner (props) {
   const doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   const privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
   const CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
-  const internetBasedAdsLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#USprivacypolicy' : 'https://www.lincol.com/help/privacy/#USprivacypolicy';
+  const interestBasedAdsLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#USprivacypolicy' : 'https://www.lincol.com/help/privacy/#USprivacypolicy';
   const privacyText = L('privacy', language);
   const privacyRightsText = L('privacyRights', language);
   const cookieSettingsText = L('cookieSettings', language);
-  const internetBasedAdsText = L('internetBasedAds', language);
+  const interestBasedAdsText = L('interestBasedAds', language);
+  console.log('interestBasedAdsText :???', interestBasedAdsText, language);
 
   function openCookieSettings() {
     const { Optanon } = window;
@@ -62,7 +62,7 @@ function CAPrivacyBanner (props) {
           </div>
             
           {addDivider(team === 'lincoln')}
-          <a href={`${internetBasedAdsLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{internetBasedAdsText}</a >
+          <a href={`${interestBasedAdsLink}`} className={`privacyContainerLink-${team}`} target='_blank'>{interestBasedAdsText}</a >
           {
             otherLinks.map((link) => {
               return (

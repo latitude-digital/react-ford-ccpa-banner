@@ -471,7 +471,7 @@ exports.default = _localizedStrings2.default;
 /* 8 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"en\":{\"Primary Language Code\":\"EN\",\"Default To\":\"EN\",\"Language Codes\":\"EN,AU,CA, EU, ZA\",\"californiaPrivacyHeader\":\"California Residents\",\"californiaPrivacyContent\":\"Exercise your rights under the California Consumer Privacy Act \",\"californiaPrivacyButton\":\"Do Not Sell My Personal Information\",\"here\":\"here\",\"privacy\":\"Privacy Notice\",\"CAPrivacyRights\":\"Your CA Privacy Rights\",\"privacyRights\":\"Your Privacy Choices\",\"internetBasedAds\":\"Interest Based Ads\",\"cookieSettings\":\"Cookie Settings\"},\"fr\":{\"Primary Language Code\":\"FR\",\"Default To\":\"FR\",\"Language Codes\":\"CA, BE-FR, CH, FR\",\"californiaPrivacyHeader\":\"\",\"californiaPrivacyContent\":\"\",\"californiaPrivacyButton\":\"\",\"here\":\"\",\"privacy\":\"\",\"CAPrivacyRights\":\"\",\"privacyRights\":\"\",\"internetBasedAds\":\"\",\"cookieSettings\":\"\"},\"es\":{\"Primary Language Code\":\"ES\",\"Default To\":\"ES\",\"Language Codes\":\"US,ES\",\"californiaPrivacyHeader\":\"Residentes de California\",\"californiaPrivacyContent\":\"Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California \",\"californiaPrivacyButton\":\"No venda mi información personal\",\"here\":\"aquí\",\"privacy\":\"CONFIDENCIALIDAD\",\"CAPrivacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA\",\"privacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD\",\"internetBasedAds\":\"ANUNCIOS BASADOS EN INTERNET\",\"cookieSettings\":\"Configuraciones de Cookies\"}}");
+module.exports = JSON.parse("{\"en\":{\"Primary Language Code\":\"EN\",\"Default To\":\"EN\",\"Language Codes\":\"EN,AU,CA, EU, ZA\",\"californiaPrivacyHeader\":\"California Residents\",\"californiaPrivacyContent\":\"Exercise your rights under the California Consumer Privacy Act \",\"californiaPrivacyButton\":\"Do Not Sell My Personal Information\",\"here\":\"here\",\"privacy\":\"Privacy Notice\",\"CAPrivacyRights\":\"Your CA Privacy Rights\",\"privacyRights\":\"Your Privacy Choices\",\"interestBasedAds\":\"Interest Based Ads\",\"cookieSettings\":\"Cookie Settings\"},\"fr\":{\"Primary Language Code\":\"FR\",\"Default To\":\"FR\",\"Language Codes\":\"CA, BE-FR, CH, FR\",\"californiaPrivacyHeader\":\"\",\"californiaPrivacyContent\":\"\",\"californiaPrivacyButton\":\"\",\"here\":\"\",\"privacy\":\"\",\"CAPrivacyRights\":\"\",\"privacyRights\":\"\",\"interestBasedAds\":\"\",\"cookieSettings\":\"\"},\"es\":{\"Primary Language Code\":\"ES\",\"Default To\":\"ES\",\"Language Codes\":\"US,ES\",\"californiaPrivacyHeader\":\"Residentes de California\",\"californiaPrivacyContent\":\"Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California \",\"californiaPrivacyButton\":\"No venda mi información personal\",\"here\":\"aquí\",\"privacy\":\"CONFIDENCIALIDAD\",\"CAPrivacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA\",\"privacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD\",\"interestBasedAds\":\"ANUNCIOS BASADOS EN INTERESES\",\"cookieSettings\":\"Configuraciones de Cookies\"}}");
 
 /***/ }),
 /* 9 */
@@ -4099,7 +4099,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- // import ccpaIcon from '../ccpa-icon-ford_275x132.png';
+
 
 function CAPrivacyBanner(props) {
   var _props$team = props.team,
@@ -4124,11 +4124,12 @@ function CAPrivacyBanner(props) {
   var doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   var privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
   var CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
-  var internetBasedAdsLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#USprivacypolicy' : 'https://www.lincol.com/help/privacy/#USprivacypolicy';
+  var interestBasedAdsLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#USprivacypolicy' : 'https://www.lincol.com/help/privacy/#USprivacypolicy';
   var privacyText = get_localized_string('privacy', language);
   var privacyRightsText = get_localized_string('privacyRights', language);
   var cookieSettingsText = get_localized_string('cookieSettings', language);
-  var internetBasedAdsText = get_localized_string('internetBasedAds', language);
+  var interestBasedAdsText = get_localized_string('interestBasedAds', language);
+  console.log('interestBasedAdsText :???', interestBasedAdsText, language);
 
   function openCookieSettings() {
     var _window = window,
@@ -4187,10 +4188,10 @@ function CAPrivacyBanner(props) {
       paddingRight: '15px'
     }
   })), addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
-    href: "".concat(internetBasedAdsLink),
+    href: "".concat(interestBasedAdsLink),
     className: "privacyContainerLink-".concat(team),
     target: "_blank"
-  }, internetBasedAdsText), otherLinks.map(function (link) {
+  }, interestBasedAdsText), otherLinks.map(function (link) {
     return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
       href: link.url,
       className: "privacyContainerLink-".concat(team),
