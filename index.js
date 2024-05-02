@@ -4129,7 +4129,6 @@ function CAPrivacyBanner(props) {
   var privacyRightsText = get_localized_string('privacyRights', language);
   var cookieSettingsText = get_localized_string('cookieSettings', language);
   var interestBasedAdsText = get_localized_string('interestBasedAds', language);
-  console.log('interestBasedAdsText :???', interestBasedAdsText, language);
 
   function openCookieSettings() {
     var _window = window,

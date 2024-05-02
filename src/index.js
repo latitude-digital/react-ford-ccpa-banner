@@ -24,7 +24,6 @@ function CAPrivacyBanner (props) {
   const privacyRightsText = L('privacyRights', language);
   const cookieSettingsText = L('cookieSettings', language);
   const interestBasedAdsText = L('interestBasedAds', language);
-  console.log('interestBasedAdsText :???', interestBasedAdsText, language);
 
   function openCookieSettings() {
     const { Optanon } = window;
