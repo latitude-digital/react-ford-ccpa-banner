@@ -471,7 +471,7 @@ exports.default = _localizedStrings2.default;
 /* 8 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"en\":{\"Primary Language Code\":\"EN\",\"Default To\":\"EN\",\"Language Codes\":\"EN,AU,CA, EU, ZA\",\"californiaPrivacyHeader\":\"California Residents\",\"californiaPrivacyContent\":\"Exercise your rights under the California Consumer Privacy Act \",\"californiaPrivacyButton\":\"Do Not Sell My Personal Information\",\"here\":\"here\",\"privacy\":\"Privacy\",\"CAPrivacyRights\":\"Your CA Privacy Rights\",\"cookieSettings\":\"Cookie Settings\"},\"fr\":{\"Primary Language Code\":\"FR\",\"Default To\":\"FR\",\"Language Codes\":\"CA, BE-FR, CH, FR\",\"californiaPrivacyHeader\":\"\",\"californiaPrivacyContent\":\"\",\"californiaPrivacyButton\":\"\",\"here\":\"\",\"privacy\":\"\",\"CAPrivacyRights\":\"\",\"cookieSettings\":\"\"},\"es\":{\"Primary Language Code\":\"ES\",\"Default To\":\"ES\",\"Language Codes\":\"US,ES\",\"californiaPrivacyHeader\":\"Residentes de California\",\"californiaPrivacyContent\":\"Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California \",\"californiaPrivacyButton\":\"No venda mi información personal\",\"here\":\"aquí\",\"privacy\":\"CONFIDENCIALIDAD\",\"CAPrivacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA\",\"cookieSettings\":\"Configuraciones de Cookies\"}}");
+module.exports = JSON.parse("{\"en\":{\"Primary Language Code\":\"EN\",\"Default To\":\"EN\",\"Language Codes\":\"EN,AU,CA, EU, ZA\",\"californiaPrivacyHeader\":\"California Residents\",\"californiaPrivacyContent\":\"Exercise your rights under the California Consumer Privacy Act \",\"californiaPrivacyButton\":\"Do Not Sell My Personal Information\",\"here\":\"here\",\"privacy\":\"Privacy Notice\",\"CAPrivacyRights\":\"Your CA Privacy Rights\",\"privacyRights\":\"Your Privacy Choices\",\"interestBasedAds\":\"Interest Based Ads\",\"cookieSettings\":\"Cookie Settings\"},\"fr\":{\"Primary Language Code\":\"FR\",\"Default To\":\"FR\",\"Language Codes\":\"CA, BE-FR, CH, FR\",\"californiaPrivacyHeader\":\"\",\"californiaPrivacyContent\":\"\",\"californiaPrivacyButton\":\"\",\"here\":\"\",\"privacy\":\"\",\"CAPrivacyRights\":\"\",\"privacyRights\":\"\",\"interestBasedAds\":\"\",\"cookieSettings\":\"\"},\"es\":{\"Primary Language Code\":\"ES\",\"Default To\":\"ES\",\"Language Codes\":\"US,ES\",\"californiaPrivacyHeader\":\"Residentes de California\",\"californiaPrivacyContent\":\"Ejerza sus derechos bajo la Ley de Privacidad del Consumidor de California \",\"californiaPrivacyButton\":\"No venda mi información personal\",\"here\":\"aquí\",\"privacy\":\"CONFIDENCIALIDAD\",\"CAPrivacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA\",\"privacyRights\":\"TUS DERECHOS DE CONFIDENCIALIDAD\",\"interestBasedAds\":\"ANUNCIOS BASADOS EN INTERESES\",\"cookieSettings\":\"Configuraciones de Cookies\"}}");
 
 /***/ }),
 /* 9 */
@@ -2699,7 +2699,7 @@ module.exports = function (list, options) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(13);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container-ford{margin-top:5px;padding:30px 20px 10px;text-align:center;width:100vw;z-index:1000;font-weight:200}.header-ford{font-family:inherit;margin-bottom:5px;padding:0}@media only screen and (min-width: 376px){.header-ford{font-size:42px}}@media screen and (max-width: 375px){.header-ford{font-size:24px}}.content-ford{font-family:inherit;padding:0 0 10px 0}@media only screen and (min-width: 376px){.content-ford{font-size:16px}}@media screen and (max-width: 375px){.content-ford{font-size:14px}}.contentLink-ford{font-family:inherit;text-decoration:underline;color:#37A9E8 !important}.privacyContainer-ford{text-align:left;width:100vw;z-index:1000;padding:50px}.privacyContainerLink-ford{text-decoration:none;padding-right:30px;font-size:12px}@media screen and (max-width: 375px){.footer-img-ford{float:left;margin-top:10px}}@media only screen and (min-width: 376px){.footer-img-ford{float:right}}.container-lincoln{margin-top:5px;padding:30px 20px 10px;text-align:center;width:100vw;z-index:1000;font-weight:200}.header-lincoln{font-family:inherit;margin-bottom:5px;padding:0;text-transform:uppercase}@media only screen and (min-width: 376px){.header-lincoln{font-size:42px}}@media screen and (max-width: 375px){.header-lincoln{font-size:24px}}.content-lincoln{font-family:inherit;padding:0 0 10px 0}@media only screen and (min-width: 376px){.content-lincoln{font-size:16px}}@media screen and (max-width: 375px){.content-lincoln{font-size:14px}}.contentLink-lincoln{font-family:inherit;text-decoration:underline;text-decoration:underline}.privacyContainer-lincoln{text-align:left;width:100vw;z-index:1000;padding:50px}@media only screen and (min-width: 376px){.privacyContainer-lincoln{padding:50px}}@media screen and (max-width: 375px){.privacyContainer-lincoln{padding:20px 50px}}.privacyContainerLink-lincoln{padding-right:15px;font-size:12px;text-transform:uppercase}.linkDivider-lincoln{padding-right:15px}a:hover{text-decoration:none}\n", ""]);
+exports.push([module.i, ".ca-banner{max-width:1440px;border-top:1px solid lightgrey;margin-left:auto;margin-right:auto}.container-ford{margin-top:5px;padding:30px 20px 10px;text-align:center;width:100vw;z-index:1000;font-weight:200}.header-ford{font-family:inherit;margin-bottom:5px;padding:0}@media only screen and (min-width: 376px){.header-ford{font-size:42px}}@media screen and (max-width: 375px){.header-ford{font-size:24px}}.content-ford{font-family:inherit;padding:0 0 10px 0}@media only screen and (min-width: 376px){.content-ford{font-size:16px}}@media screen and (max-width: 375px){.content-ford{font-size:14px}}.contentLink-ford{font-family:inherit;text-decoration:underline;color:#37A9E8 !important}.privacyContainer-ford{text-align:left;width:100vw;z-index:1000;padding:50px}.privacyContainerLink-ford{text-decoration:none;padding-right:30px;font-size:12px}@media screen and (max-width: 375px){.footer-img-ford{float:left;margin-top:10px}}@media only screen and (min-width: 376px){.footer-img-ford{float:right}}.container-lincoln{margin-top:5px;padding:30px 20px 10px;text-align:center;width:100vw;z-index:1000;font-weight:200}.header-lincoln{font-family:inherit;margin-bottom:5px;padding:0;text-transform:uppercase}@media only screen and (min-width: 376px){.header-lincoln{font-size:42px}}@media screen and (max-width: 375px){.header-lincoln{font-size:24px}}.content-lincoln{font-family:inherit;padding:0 0 10px 0}@media only screen and (min-width: 376px){.content-lincoln{font-size:16px}}@media screen and (max-width: 375px){.content-lincoln{font-size:14px}}.contentLink-lincoln{font-family:inherit;text-decoration:underline;text-decoration:underline}.privacyContainer-lincoln{text-align:left;width:100vw;z-index:1000;padding:50px}@media only screen and (min-width: 376px){.privacyContainer-lincoln{padding:50px}}@media screen and (max-width: 375px){.privacyContainer-lincoln{padding:20px 50px}}.privacyContainerLink-lincoln{padding-right:15px;font-size:12px;text-transform:uppercase}.linkDivider-lincoln{padding-right:15px}a:hover{text-decoration:none}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -4123,10 +4123,12 @@ function CAPrivacyBanner(props) {
   var deletePILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=deletemypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=deletemypi';
   var doNotSellPILink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/?ccpatype=donotsellmypi' : 'https://www.lincoln.com/help/privacy-terms/ccpa/?ccpatype=donotsellmypi';
   var privacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/' : 'https://www.lincoln.com/help/privacy-terms/#privacy';
-  var CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#caPrivacy' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
+  var CAPrivacyLink = team === 'ford' ? 'https://www.ford.com/help/privacy/ccpa/' : 'https://www.lincoln.com/help/privacy-terms/#caPrivacy';
+  var interestBasedAdsLink = team === 'ford' ? 'https://www.ford.com/help/privacy/#USprivacypolicy' : 'https://www.lincol.com/help/privacy/#USprivacypolicy';
   var privacyText = get_localized_string('privacy', language);
-  var CAprivacyText = get_localized_string('CAPrivacyRights', language);
+  var privacyRightsText = get_localized_string('privacyRights', language);
   var cookieSettingsText = get_localized_string('cookieSettings', language);
+  var interestBasedAdsText = get_localized_string('interestBasedAds', language);
 
   function openCookieSettings() {
     var _window = window,
@@ -4145,23 +4147,7 @@ function CAPrivacyBanner(props) {
     className: "".concat(team)
   }, /*#__PURE__*/react_default.a.createElement("div", {
     className: "ca-banner"
-  }, /*#__PURE__*/react_default.a.createElement("div", {
-    className: "container-".concat(team),
-    style: containerStyle && containerStyle
-  }, /*#__PURE__*/react_default.a.createElement("p", {
-    className: "header-".concat(team)
-  }, get_localized_string('californiaPrivacyHeader', language)), /*#__PURE__*/react_default.a.createElement("p", {
-    className: "content-".concat(team)
-  }, get_localized_string('californiaPrivacyContent', language), /*#__PURE__*/react_default.a.createElement("a", {
-    href: "".concat(deletePILink),
-    className: "contentLink-".concat(team),
-    target: "_blank"
-  }, get_localized_string('here', language)), "."), /*#__PURE__*/react_default.a.createElement("a", {
-    href: "".concat(doNotSellPILink),
-    target: "_blank"
-  }, /*#__PURE__*/react_default.a.createElement("button", {
-    className: "".concat(team, "-primary-button")
-  }, get_localized_string('californiaPrivacyButton', language)))), showPrivacy ? /*#__PURE__*/react_default.a.createElement("div", {
+  }, showPrivacy ? /*#__PURE__*/react_default.a.createElement("div", {
     className: "privacyContainer-".concat(team),
     style: privacyContainerStyle && privacyContainerStyle
   }, team === 'lincoln' ? /*#__PURE__*/react_default.a.createElement("img", {
@@ -4182,19 +4168,37 @@ function CAPrivacyBanner(props) {
     },
     className: "privacyContainerLink-".concat(team),
     onClick: openCookieSettings
-  }, cookieSettingsText), addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
+  }, cookieSettingsText), addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("div", {
+    style: {
+      display: 'inline'
+    }
+  }, /*#__PURE__*/react_default.a.createElement("a", {
     href: "".concat(CAPrivacyLink),
     className: "privacyContainerLink-".concat(team),
+    style: {
+      paddingRight: '10px'
+    },
     target: "_blank"
-  }, CAprivacyText), otherLinks.map(function (link) {
-    return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, addDivider(true), /*#__PURE__*/react_default.a.createElement("a", {
+  }, privacyRightsText), /*#__PURE__*/react_default.a.createElement("img", {
+    src: "https://cdn.latitudewebservices.com/icons/ccpa-icon-ford.png",
+    style: {
+      width: '40px',
+      verticalAlign: 'middle',
+      paddingRight: '15px'
+    }
+  })), addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
+    href: "".concat(interestBasedAdsLink),
+    className: "privacyContainerLink-".concat(team),
+    target: "_blank"
+  }, interestBasedAdsText), otherLinks.map(function (link) {
+    return /*#__PURE__*/react_default.a.createElement(react_default.a.Fragment, null, addDivider(team === 'lincoln'), /*#__PURE__*/react_default.a.createElement("a", {
       href: link.url,
       className: "privacyContainerLink-".concat(team),
       target: link.target
     }, link.text));
   }), team === 'ford' ? /*#__PURE__*/react_default.a.createElement("img", {
     className: "footer-img-".concat(team),
-    src: 'https://d2n145t5d2n6zs.cloudfront.net/ford_logo_bluecircle.png',
+    src: 'https://cdn.latitudewebservices.com/headers/images/ford_script.png',
     alt: 'Ford Logo',
     width: 75,
     style: {
