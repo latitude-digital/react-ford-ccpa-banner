@@ -51,7 +51,7 @@
   "privacy": {
     "Key": "privacy",
     "Alternate Keys": "",
-    "English": "Privacy",
+    "English": "Privacy Notice",
     "French": "",
     "Spanish": "CONFIDENCIALIDAD"
   },
@@ -61,6 +61,20 @@
     "English": "Your CA Privacy Rights",
     "French": "",
     "Spanish": "TUS DERECHOS DE CONFIDENCIALIDAD EN CALIFORNIA"
+  },
+  "privacyRights": {
+    "Key": "privacyRights",
+    "Alternate Keys": "",
+    "English": "Your Privacy Choices",
+    "French": "",
+    "Spanish": "TUS DERECHOS DE CONFIDENCIALIDAD"
+  },
+  "interestBasedAds": {
+    "Key": "interestBasedAds",
+    "Alternate Keys": "",
+    "English": "Interest Based Ads",
+    "French": "",
+    "Spanish": "ANUNCIOS BASADOS EN INTERESES"
   },
   "cookieSettings": {
     "Key": "cookieSettings",
