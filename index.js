@@ -4181,6 +4181,7 @@ function CAPrivacyBanner(props) {
     target: "_blank"
   }, privacyRightsText), /*#__PURE__*/react_default.a.createElement("img", {
     src: "https://cdn.latitudewebservices.com/icons/ccpa-icon-ford.png",
+    alt: "opt out icon",
     style: {
       width: '40px',
       verticalAlign: 'middle',
