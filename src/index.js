@@ -57,7 +57,7 @@ function CAPrivacyBanner (props) {
           {addDivider(team === 'lincoln')}
           <div style={{display: 'inline'}}>
             <a href={`${CAPrivacyLink}`} className={`privacyContainerLink-${team}`} style={{paddingRight: '10px'}}target='_blank'>{privacyRightsText}</a >
-            <img src='https://cdn.latitudewebservices.com/icons/ccpa-icon-ford.png' style={{width: '40px', verticalAlign: 'middle', paddingRight: '15px'}}/>
+            <img src='https://cdn.latitudewebservices.com/icons/ccpa-icon-ford.png' alt="opt out icon" style={{width: '40px', verticalAlign: 'middle', paddingRight: '15px'}}/>
           </div>
             
           {addDivider(team === 'lincoln')}
