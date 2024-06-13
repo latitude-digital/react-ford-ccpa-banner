@@ -1,6 +1,11 @@
 const fs = require('fs');
 
-const filesToFormat = [
+interface FileToFormat {
+  data: Record<string, any>;
+  saveAs: string;
+}
+
+const filesToFormat: FileToFormat[] = [
   {
     // Global
     data: require('./locale-unformatted.json'),
@@ -8,17 +13,17 @@ const filesToFormat = [
   },
 ];
 
-function generateFormattedLocaleForFile(localeDataUnformatted, pathToSave) {
-  const localeDataFormatted = {};
+function generateFormattedLocaleForFile(localeDataUnformatted: Record<string, any>, pathToSave: string): void {
+  const localeDataFormatted: Record<string, any> = {};
   const localeTypes = localeDataUnformatted['Primary Language Code'];
-  const ignoredLocaleKeys = [ 'Key', 'Alternate Keys' ];
+  const ignoredLocaleKeys = ['Key', 'Alternate Keys'];
 
-  ignoredLocaleKeys.forEach((ignore) => {
+  ignoredLocaleKeys.forEach(ignore => {
     delete localeTypes[ignore];
   });
 
-  Object.keys(localeDataUnformatted).forEach((key) => {
-    Object.keys(localeTypes).forEach((localeName) => {
+  Object.keys(localeDataUnformatted).forEach(key => {
+    Object.keys(localeTypes).forEach(localeName => {
       // format locale code for react-native-localization use
       const localeCode = localeTypes[localeName].toLowerCase();
       const localeVal = localeDataUnformatted[key][localeName].split(/\\n/).join('\n');
@@ -38,4 +43,4 @@ function generateFormattedLocaleForFile(localeDataUnformatted, pathToSave) {
   fs.writeFileSync(pathToSave, JSON.stringify(localeDataFormatted, null, 0));
 }
 
-filesToFormat.forEach(file => { return generateFormattedLocaleForFile(file.data, file.saveAs); });
+filesToFormat.forEach(file => generateFormattedLocaleForFile(file.data, file.saveAs));

@@ -1,6 +1,6 @@
 import getLocalizedStrings from './localized-strings';
 
-function getLocalizedString(key, lang) {
+function getLocalizedString(key: string, lang: string): string {
   const strings = getLocalizedStrings(lang);
 
   const localized = strings[key];
