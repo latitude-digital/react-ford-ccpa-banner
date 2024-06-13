@@ -8,11 +8,11 @@ module.exports = {
     // devtool: 'source-map',
     mode: 'production',
     entry: {
-        index : path.resolve('./src/index.js'),
+        index:'./src/index.tsx',
     },
     output: {
-        path: path.resolve('./'),
         filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'umd',
     },
     performance: {
@@ -24,17 +24,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(ts|tsx)?$/,
+                use: [
+                    {
+                        loader: 'ts-loader'
+                    }
+                ],
                 exclude: /node_modules/,
-                use: [{
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            [ '@babel/env', { modules: false }],
-                            '@babel/react',
-                        ],
-                    },
-                }],
             },
             {
                 test: /\.scss$/,
@@ -52,6 +48,9 @@ module.exports = {
                 }],
             },
         ],
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js', '.scss'],
     },
     plugins: [
         new webpack.DefinePlugin({

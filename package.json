@@ -2,23 +2,20 @@
   "name": "react-ford-ccpa-banner",
   "version": "4.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.ts",
   "scripts": {
     "locale-gen": "node dist/localization/locale-gen.js",
-    "build": "rm -rf ./dist/* && tsc && yarn locale-gen"
+    "build": "rm -rf ./dist/* && webpack --env production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/sprintf-js": "^1.1.4",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
-    "css-loader": "^3.4.0",
     "postcss-fixes": "^2.0.1",
     "postcss-loader": "^3.0.0",
     "prop-types": "^15.6.2",
@@ -26,12 +23,12 @@
     "react-localization": "^1.0.15",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.2",
+    "ts-loader": "^9.5.1",
     "typescript": "^5.4.5",
-    "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.2",
     "react": "^16.8.1"
   },
   "devDependencies": {
@@ -39,6 +36,7 @@
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
+    "css-loader": "^3.4.0",
     "sass": "^1.76.0"
   }
 }
