@@ -2,7 +2,7 @@
   "name": "react-ford-ccpa-banner",
   "version": "4.0.1",
   "description": "",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "locale-gen": "node dist/localization/locale-gen.js",
     "build": "rm -rf ./dist/* && webpack --env production"
