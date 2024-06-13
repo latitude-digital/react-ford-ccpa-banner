@@ -1,9 +1,10 @@
 const path = require('path');
 
 const webpack = require('webpack');
-
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+    devtool: 'source-map',
     target: 'node',
     // devtool: 'source-map',
     mode: 'production',
@@ -56,6 +57,10 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: "src/localization/locale-unformatted.json", to: "" },
+            ],
+        }),
     ],
 };
-
