@@ -119,7 +119,7 @@ const FordFooter: React.FC<FordFooterProps> = props => {
             </ul>
             {team === 'lincoln' && (
               <img
-                className={`footer-img-${team} bottom`}
+                className={`footer-img-${team} bottom-nav`}
                 src={'https://cdn.latitudewebservices.com/headers/images/LincolnStar_White.png'}
                 alt={'Lincoln Logo'}
               />
